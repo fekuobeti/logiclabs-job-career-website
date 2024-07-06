@@ -14,12 +14,17 @@
   </head>
   <body>
     <div class="container">
-      <h1 class="text-center mt-2 mb-4">Logic-Labs Ltd Ug</h1>
+      <h1 class="text-center mt-2 mb-4">
+        {{company_name}} Careers</h1>
       <img class="img-fluid" id="banner" src="https://8d3facd7-d1d4-4010-98b7-3849b8ff8476-00-2sglbaz7r92uh.kirk.replit.dev/static/ll_jobs_b1.jpg" height="320">
       <h2 class="text-center mt-2 mb-4">About LLJOBS</h2>
       <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet commodo nulla facilisi nullam vehicula ipsum a. Tortor posuere ac ut consequat. Purus gravida quis blandit turpis cursus in hac. Nibh ipsum consequat nisl vel pretium lectus quam id leo. Sed enim ut sem viverra aliquet. Turpis egestas sed tempus urna et pharetra. At quis risus sed vulputate. Hendrerit dolor magna eget est lorem. Etiam sit amet nisl purus in mollis. Posuere ac ut consequat semper viverra nam. Nascetur ridiculus mus mauris vitae. Scelerisque felis imperdiet proin fermentum leo. Ut sem viverra aliquet eget sit amet tellus. Eget lorem dolor sed viverra ipsum nunc aliquet.</p>
       <h2 class="text-center">Open Position</h2>
-      <p>TODO Show the job opennings here</p>
+      <div>
+        {% for job in jobs %}
+         {% include 'jobitem.html' %}
+        {% endfor %}
+      </div>
       <div class="text-center">
       <button class="btn btn-primary btn-lg">Contact Us</button>
       <p class="mt-4">Copyright 2024 Logic-labs</p>
